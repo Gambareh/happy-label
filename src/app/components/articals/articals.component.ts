@@ -20,13 +20,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon',    weight: 20.1797,symbol: 'Ne'},
 ];
 
-
 @Component({
-  selector: 'app-main-table',
-  templateUrl: './main-table.component.html',
-  styleUrls: ['./main-table.component.scss']
+  selector: 'app-articals',
+  templateUrl: './articals.component.html',
+  styleUrls: ['./articals.component.scss']
 })
-export class MainTableComponent implements OnInit {
+export class ArticalsComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   constructor() { }

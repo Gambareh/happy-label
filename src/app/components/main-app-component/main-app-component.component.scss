@@ -1,11 +1,12 @@
 .main-content{
-  border-color: green;
-  border-style: solid;
+  //border-style: solid;
   height: 100%;
-  width: 170% !important;
+  width: 105% !important;
   background-color:#f5f3f4;
+  padding-right: 5px;
  
 }
+
 .example-form-field {
   width: 200px;
   margin: 15px;
@@ -19,5 +20,10 @@
   color: gray;
   margin: 17px;
   font-family: sans-serif;
+  padding: 5px;
+}
+
+.filters{
+  width: 100%;
 }
 

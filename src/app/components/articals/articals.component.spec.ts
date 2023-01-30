@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainTableComponent } from './main-table.component';
+import { ArticalsComponent } from './articals.component';
 
-describe('MainTableComponent', () => {
-  let component: MainTableComponent;
-  let fixture: ComponentFixture<MainTableComponent>;
+describe('ArticalsComponent', () => {
+  let component: ArticalsComponent;
+  let fixture: ComponentFixture<ArticalsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainTableComponent ]
+      declarations: [ ArticalsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainTableComponent);
+    fixture = TestBed.createComponent(ArticalsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

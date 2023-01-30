@@ -14,10 +14,18 @@ import {MatDividerModule} from '@angular/material/divider';
 import { MainAppComponentComponent } from './components/main-app-component/main-app-component.component'; 
 import {MatInputModule} from '@angular/material/input'; 
 import {MatButtonModule} from '@angular/material/button';
-import { MainTableComponent } from './components/main-app-component/main-table/main-table.component'; 
 import {MatTableModule} from '@angular/material/table'; 
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ArticalsComponent } from './components/articals/articals.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes:Routes = [
+  {path:'articals',component: ArticalsComponent},
+  
+ 
+ 
+];
 
 @NgModule({
   declarations: [
@@ -25,9 +33,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponentComponent,
     AppComponentComponent,
     MainAppComponentComponent,
-    MainTableComponent
+    ArticalsComponent,
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,

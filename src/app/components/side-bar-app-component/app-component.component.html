@@ -1,9 +1,9 @@
 
 <div  class="nav-bar" >
   <mat-toolbar class="header-toolbar">
-    <mat-icon class="header-icon">credit_card</mat-icon>
+    <mat-icon class="header-icon">label</mat-icon>
     &nbsp;&nbsp;
-    <span class="header-title">Happy Label</span>
+    <span class="header-title">toplabel</span>
   </mat-toolbar>
   <mat-divider></mat-divider>
   <mat-nav-list class="mat-list">
@@ -12,15 +12,16 @@
       &nbsp;&nbsp;Dashboard
     </a>
     <mat-divider></mat-divider>
-    <a mat-list-item href="#">
+    <a mat-list-item [routerLink]="'/articals'">
       <mat-icon class="header-icon">library_add</mat-icon>
       &nbsp;&nbsp;Articals
     </a>
     <mat-divider></mat-divider>
-    <a mat-list-item href="#">
-      <mat-icon>crop_portrait</mat-icon>
+    <a mat-list-item [routerLink]="'/people'">
+      <mat-icon>label_important</mat-icon>
       &nbsp;&nbsp;Labels
     </a>
+    <mat-divider></mat-divider>
   </mat-nav-list>
 <div>
 
